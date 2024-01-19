@@ -1,0 +1,38 @@
+{
+  "name": "medito-fundraiser",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@types/nodemailer": "^6.4.14",
+    "@types/stripe": "^8.0.417",
+    "dotenv": "^16.3.1",
+    "formik": "^2.4.5",
+    "framer-motion": "^10.18.0",
+    "handlebars": "^4.7.8",
+    "handlebars-loader": "^1.7.3",
+    "next": "14.0.4",
+    "nodemailer": "^6.9.8",
+    "react": "^18",
+    "react-dom": "^18",
+    "stripe": "^14.13.0"
+  },
+  "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.8.5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}
