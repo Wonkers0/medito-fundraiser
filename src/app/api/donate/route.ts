@@ -17,6 +17,9 @@ export async function POST(request: Request) {
       status: 400,
     })
 
+  const appUrl = process.env.VERCEL_URL
+    ? `https://austin.steelcitycodes.org/`
+    : "http://localhost:3000/"
   const session = await stripe.checkout.sessions.create({
     line_items: [
       {
@@ -31,8 +34,8 @@ export async function POST(request: Request) {
       },
     ],
     mode: "payment",
-    success_url: "http://localhost:3000/",
-    cancel_url: "http://localhost:3000/",
+    success_url: appUrl,
+    cancel_url: appUrl,
   })
 
   return Response.json(session.url)
