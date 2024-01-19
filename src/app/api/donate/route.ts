@@ -18,7 +18,7 @@ export async function POST(request: Request) {
     })
 
   const appUrl = process.env.VERCEL_URL
-    ? `https://austin.steelcitycodes.org/`
+    ? `https://medito-fundraiser.vercel.app/`
     : "http://localhost:3000/"
   const session = await stripe.checkout.sessions.create({
     line_items: [
