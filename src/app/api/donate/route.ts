@@ -1,6 +1,5 @@
 import "dotenv/config"
 import Stripe from "stripe"
-export const runtime = "edge"
 
 const stripe = new Stripe(process.env.STRIPE_KEY!)
 
