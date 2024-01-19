@@ -1,6 +1,7 @@
 const emailTemplate = require("./emailTemplate.handlebars")
 import nodemailer from "nodemailer"
 import "dotenv/config"
+export const runtime = "edge"
 
 const transporter = nodemailer.createTransport({
   service: process.env.CONTACT_EMAIL_SERVICE,
